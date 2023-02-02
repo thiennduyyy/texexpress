@@ -1,13 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
+  /* padding-top: 16rem; */
   --max-width: 1100px;
+  min-height: 1000px;
+  /* background-color: #c6c8ca; */
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+  position: relative;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -38,6 +45,9 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+}
+html {
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,6 +93,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  
 }
 
 body {
@@ -93,6 +104,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  
 }
 
 a {
@@ -103,5 +115,6 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+    
   }
 }
